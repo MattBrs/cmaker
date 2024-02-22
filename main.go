@@ -5,6 +5,9 @@ import (
 	"os/exec"
 )
 
+// WIP
+// this is a placeholder, pushing a better code soon...
+
 func main() {
 	fmt.Println("Ciaoo!")
 	out, err := exec.Command("make clean").Output()
