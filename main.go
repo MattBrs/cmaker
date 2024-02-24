@@ -23,6 +23,8 @@ func execCommand() {
 	switch arg {
 	case "init":
 		initCommand.Exec()
+	case "help":
+		listHelp()
 	default:
 		fmt.Println("Command", arg, "not recognized, terminating")
 		return

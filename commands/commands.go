@@ -12,7 +12,7 @@ var commands = map[string]Command{
 	},
 	"init": {
 		Name:        "init",
-		Description: "Create cmake with default parameter",
+		Description: "Create cmake with default parameters",
 	},
 }
 
