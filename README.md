@@ -7,11 +7,11 @@ Right now only works the initing of a c++ project: basic cmakefiles are created 
 Everything else is missing.
 
 The stack of the next things to do is:
-    - delete: removes files and folders created by the application, leaving the rest of the project untouched.
-    - add-flag: adds a compilation flag to the project cmake file (such as profile, debug flags, optimization flags, etc).
-    - rm-flag: undos the above command
-    - add-lib: downloads from a repository a library, compiles it and then links it to the project.
-    - rm-lib: un-links the library from the project.
+- delete: removes files and folders created by the application, leaving the rest of the project untouched.
+- add-flag: adds a compilation flag to the project cmake file (such as profile, debug flags, optimization flags, etc).
+- rm-flag: undos the above command
+- add-lib: downloads from a repository a library, compiles it and then links it to the project.
+- rm-lib: un-links the library from the project.
 
 ## Compilation
 On the root of the project, execute:
