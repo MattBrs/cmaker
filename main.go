@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/MattBrs/cmaker/commands"
+	"github.com/MattBrs/cmaker/commands/init"
 	"os"
-
-	"github.com/cmaker/commands"
-	"github.com/cmaker/commands/init"
 )
 
 func listHelp() {
