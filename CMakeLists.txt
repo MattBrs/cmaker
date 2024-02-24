@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 12)
+project(Test LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 21)
+set(PROJECT_SOURCES main.cpp)
+add_executable(Test ${PROJECT_SOURCES})

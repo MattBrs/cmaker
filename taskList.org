@@ -1,0 +1,19 @@
+* ToDos
+
+** Pending feature list
+    - Create cmake automatically with "init" function
+    - Build project
+    - Clean project
+    - Add flags to project cmake
+    - Add libraries to project:
+        - Define a repository with compile instructions
+        - Use the program to pull the library repo and build with the instructions automatically
+        - Add to cmake automatically
+
+** Ideas
+Maybe do separate cmake files? 
+    - link_libs
+    - include_dirs
+    - main_cmake
+
+So the app can add or remove the libs from the dedicated files without searching in a big single file.
