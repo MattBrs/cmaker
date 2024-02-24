@@ -2,7 +2,7 @@
 go application to handle cmake builds, flags and add libraries for c++.
 
 ## What is working, what is missing
-Right now only works the initing of a c++ project: basic cmakefiles are created with user-inserted parameters. Cmake-ing the result compiles without problems.
+Right now only works the initing  and clean of a c++ project: basic cmakefiles are created with user-inserted parameters. Cmake-ing the result compiles without problems.
 
 Everything else is missing.
 
