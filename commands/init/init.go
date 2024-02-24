@@ -32,7 +32,7 @@ func initCmake() {
 	f, err := os.Create("CMakeLists.txt")
 	if err != nil {
 		fmt.Println("There was an error during init: ", err)
-		return
+		os.Exit(1)
 	}
 
 	var name string
@@ -74,9 +74,10 @@ func initCmake() {
 	err = os.Mkdir("cmake", 0750)
 	if err != nil && os.IsExist(err) {
 		fmt.Println("cmake folder already exists, quitting to avoid breakage")
+		os.Exit(1)
 	} else if err != nil {
 		fmt.Println("There was an error in initing phase: ", err)
-		return
+		os.Exit(1)
 	}
 
 	f, _ = os.Create("cmake/include.cmake")
