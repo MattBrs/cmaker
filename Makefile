@@ -7,6 +7,6 @@ deps:
 	echo "no deps"
 
 clean:
-	rm -rf ${BINARY_NAME}
+	rm -rf ${BINARY_NAME} ./CMakeLists.txt ./cmake ./.cmaker
 
 
