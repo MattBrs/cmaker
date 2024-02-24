@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+cmaker
+CMakeLists.txt
+.cmaker
+cmake
