@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/MattBrs/cmaker/commands"
+	"github.com/MattBrs/cmaker/commands/clean"
 	"github.com/MattBrs/cmaker/commands/init"
 	"os"
 )
@@ -25,6 +26,8 @@ func execCommand() {
 		initCommand.Exec()
 	case "help":
 		listHelp()
+	case "clean":
+		cleanCommand.Exec()
 	default:
 		fmt.Println("Command", arg, "not recognized, terminating")
 		return
@@ -38,12 +41,4 @@ func main() {
 	}
 
 	execCommand()
-
-	// out, err := exec.Command("make clean").Output()
-	//
-	// if err != nil {
-	// 	fmt.Println("The command did not complete successfully")
-	// } else {
-	// 	fmt.Println("The output is: ", string(out))
-	// }
 }
