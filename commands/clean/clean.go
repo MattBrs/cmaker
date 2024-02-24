@@ -14,6 +14,16 @@ func handleExecErr(error error) {
 
 func Exec() {
 	userAnswer := ""
+	for userAnswer == "" || (userAnswer != "y" && userAnswer != "n") {
+		fmt.Print("Are you sure? (y/n) ")
+		fmt.Scan(&userAnswer)
+	}
+
+	if userAnswer == "n" {
+		os.Exit(0)
+	}
+
+	userAnswer = ""
 
 	for userAnswer == "" || (userAnswer != "y" && userAnswer != "n") {
 		fmt.Print("Do you want to keep your cmake files? (y/n) ")
