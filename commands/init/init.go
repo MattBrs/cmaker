@@ -63,6 +63,26 @@ func initCmake() {
 	n, err = f.WriteString(fmt.Sprintf("add_executable(%s ${PROJECT_SOURCES})\n", name))
 	handleInitErr("Error while writing main cmake: ", err, n)
 
+	n, err = f.WriteString("include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/include.cmake)\n")
+	handleInitErr("Error while writing main cmake: ", err, n)
+
+	n, err = f.WriteString("include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/link.cmake)\n")
+	handleInitErr("Error while writing main cmake: ", err, n)
+
+	f.Close()
+
+	err = os.Mkdir("cmake", 0750)
+	if err != nil && os.IsExist(err) {
+		fmt.Println("cmake folder already exists, quitting to avoid breakage")
+	} else if err != nil {
+		fmt.Println("There was an error in initing phase: ", err)
+		return
+	}
+
+	f, _ = os.Create("cmake/include.cmake")
+	f.Close()
+
+	f, _ = os.Create("cmake/link.cmake")
 	f.Close()
 }
 
