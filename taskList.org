@@ -1,9 +1,7 @@
 * ToDos
 
 ** Pending feature list
-    - Create cmake automatically with "init" function
     - Build project
-    - Clean project
     - Add flags to project cmake
     - Add libraries to project:
         - Define a repository with compile instructions
