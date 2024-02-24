@@ -9,4 +9,5 @@ deps:
 clean:
 	rm -rf ${BINARY_NAME} ./CMakeLists.txt ./cmake ./.cmaker
 
-
+install: 
+	cp ./cmaker /usr/local/bin
